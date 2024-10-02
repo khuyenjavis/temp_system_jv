@@ -1,0 +1,178 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t "hello"
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t("hello") %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   "true": "foo"
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+en:
+  grape:
+    errors:
+      format: '%{message}'
+  hello: 'Hello world'
+  login:
+    success: 'Login successfully'
+    error:
+      username_password: 'Username or password is not correct'
+      ban: 'Your account locked'
+  refresh_token:
+    success: 'Get token successfully'
+    error: 'Refresh token expired or not valid'
+  logout:
+    success: 'Logout successful'
+  users:
+    id:
+      required: 'Id is required'
+    first_name:
+      required: 'First name is required'
+    last_name:
+      required: 'Last name is required'
+    phone:
+      required: 'Phone number is required'
+    email:
+      required: 'Email is required'
+    password:
+      required: 'Password is required'
+    user_name:
+      required: 'User name is required'
+    address:
+      required: 'Address is required'
+    avatar:
+      required: 'Avatar is required'
+    list:
+      success: 'Get list users successfully'
+    create:
+      success: 'Create user successfully'
+    update:
+      success: 'Update user successfully'
+    lock:
+      success: 'Lock user successfully'
+    unlock:
+      success: 'Unlock user successfully'
+    detail:
+      success: 'Get user successfully'
+    delete:
+      success: 'Delete user successfully'
+  reset_password:
+    success: 'Reset password successfully'
+  reset_password:
+    error:
+      invalid: 'Email invalid'
+  update_password:
+    success: 'Update password successfully'
+  change_password:
+    error:
+      token_invalid: 'Token is invalid'
+  todos:
+    id:
+      required: 'Id is required'
+    title:
+      required: 'Title name is required'
+    description:
+      required: 'Description name is required'
+    start_date:
+      required: 'Start date is required'
+    images:
+      maximum_upload: 'Maximum %{total_number} images are allowed'
+    end_date:
+      required: 'Start date is required'
+    avatar:
+      required: 'Avatar is required'
+    list:
+      success: 'Get list todo successfully'
+    create:
+      success: 'Create todo successfully'
+    update:
+      success: 'Update todo successfully'
+    detail:
+      success: 'Get todo successfully'
+    delete:
+      success: 'Delete todo successfully'
+  products:
+    id:
+      required: 'Id is required'
+    list:
+      success: 'Get list products successfully'
+    create:
+      success: 'Create product successfully'
+    update:
+      success: 'Update product successfully'
+    detail:
+      success: 'Get product successfully'
+    delete:
+      success: 'Delete product successfully'
+  reviews:
+    id:
+      required: 'Id is required'
+    list:
+      success: 'Get list reviews successfully'
+    create:
+      success: 'Create review successfully'
+    update:
+      success: 'Update review successfully'
+    detail:
+      success: 'Get review successfully'
+    delete:
+      success: 'Delete review successfully'
+  orders:
+    id:
+      required: 'Id is required'
+    list:
+      success: 'Get list orders successfully'
+    create:
+      success: 'Create order successfully'
+    update:
+      success: 'Update order successfully'
+    detail:
+      success: 'Get order successfully'
+    delete:
+      success: 'Delete order successfully'
+  invoices:
+    id:
+      required: 'Id is required'
+    list:
+      success: 'Get list invoices successfully'
+    create:
+      success: 'Create invoice successfully'
+    update:
+      success: 'Update invoice successfully'
+    detail:
+      success: 'Get invoice successfully'
+    delete:
+      success: 'Delete invoice successfully'
+    errors:
+      messages: 'Error! Please try it again!'
+    not_found:
+      messages: 'Invoice not found'
+    payment:
+      failed: "Payment verify failed"
+      used: "Payment id was used"
+      error: "Error verifying payment: #{error}"
+  validates:
+    image:
+      format: Invalid image file format, only jpg/jpeg/png are allowed.
+

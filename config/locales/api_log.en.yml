@@ -1,0 +1,25 @@
+en:
+  api_log_keys:
+    users:
+      changed: USER_CHANGED
+      deleted: USER_DELETED
+      login: USER_LOGGED_IN
+      logout: USER_LOGGED_OUT
+      reset_password: USER_RESET_PWD
+  api_log_messages:
+    users:
+      changed:
+        success: "[%{user_info}] user's information has been changed"
+        failed: "[%{user_info}] user failed to change"
+      deleted:
+        success: "[%{user_info}] user has been deleted."
+        failed: "[%{user_info}] user failed to delete"
+      login:
+        success: "[%{user_info}] user logged on successfully."
+        failed: "[%{user_info}] user failed to log on."
+      logout:
+        success: "[%{user_info}] user logged off successfully."
+        failed: "[%{user_info}] user failed to log off."
+      reset_password:
+        success: "[%{user_info}] user password information has been reseted."
+        failed: "[%{user_info}] user failed to reset password."
